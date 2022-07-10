@@ -1,13 +1,28 @@
-﻿// 
+﻿// Вывести на экран числа от -N до N
 
-int i=2;
 System.Console.WriteLine("введите число");
-int N = Convert.ToInt32(Console.ReadLine());
-while(i<=N)
+int A = Convert.ToInt32(Console.ReadLine());
+if (A<0)
 {
-    if (i%2==0)
-    {
-        System.Console.Write($"{i} ");
-    }
-    i=i+1;
+int B = A * (-1) - 1;
+while(B > A)
+{
+{
+        System.Console.Write($"{B} ");
+         B=B-1;
+}
+}
+}
+else 
+{
+int B = A *(-1) + 1;
+
+
+while(B < A)
+{
+{
+        System.Console.Write($"{B} ");
+         B=B+1;
+}
+}
 }
