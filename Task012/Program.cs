@@ -13,13 +13,13 @@ else
 System.Console.WriteLine(a);
 }
 
-/*
-int a = 10;
-            int b = 99;
-            for (; b !=0; b/=10)
-            {
-                int r = b % 10;
-                if (r > a) a = r;
-                System.Console.WriteLine(r);
-            }
-/*
+
+// int a = 10;
+//             int b = 99;
+//             for (; b !=0; b/=10)
+//             {
+//                 int r = b % 10;
+//                 if (r > a) a = r;
+//                 System.Console.WriteLine(r);
+//             }
+
