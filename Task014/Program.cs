@@ -11,7 +11,6 @@ else {
     if (a%b != 0)
     {
         double sum = a%b;
-        sum = sum*10;
         System.Console.WriteLine(sum);
     }
 }
