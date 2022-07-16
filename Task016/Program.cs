@@ -2,7 +2,7 @@
 
 bool b,c,d;
 b=true;
-b=false;
+d=false;
 System.Console.WriteLine("введите число");
 int x = Convert.ToInt32(Console.ReadLine());
 b=x%7==0;
