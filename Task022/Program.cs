@@ -1,22 +1,19 @@
 ﻿// Программа проверяет пятизначное число на палиндромом.
 
-Console.Clear();
-System.Console.WriteLine();
+Console.Write("Введите число: ");
+string? number = Console.ReadLine();
 
-System.Console.WriteLine("Введите целое число:");
-string number = Console.ReadLine();
-int length = number.Length;
-
-bool IsPalindrome()
+void CheckNumber(string number)
 {
-    for (int i = 0; i < length / 2; i++)
-        while (number[i] == number[length - 1])
-        {
-            return true;
-        }
-    return false;
+    if (number[0] == number[4] || number[1] == number[3])
+    {
+        Console.WriteLine($"{number} - палиндром.");
+    }
+    else Console.WriteLine($"{number} - не палиндром.");
 }
 
-if (IsPalindrome()) System.Console.WriteLine($"Число {number} является палиндромом");
-else System.Console.WriteLine($"Число {number} не является палиндромом");
-System.Console.WriteLine();
+if (number!.Length == 5)
+{
+    CheckNumber(number);
+}
+else Console.WriteLine($"incorrect");
