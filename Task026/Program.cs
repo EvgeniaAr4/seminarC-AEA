@@ -4,7 +4,7 @@ Console.Clear();
 System.Console.WriteLine();
 
 System.Console.Write("Введите число: ");
-string writeA = Console.ReadLine();
+string? writeA = Console.ReadLine();
 int A = Convert.ToInt32(writeA);
 
 int GetNumbersSum(int A)
